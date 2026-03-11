@@ -24,6 +24,6 @@ Welcome to the Wedding OTT project team! We are a group of up to 10 members work
 
 ## Adding Team Members
 If you are the repository owner, you can add team members (up to 10 total) by:
-1. Navigating to the repository on GitHub.
+1. Navigating to the repository on GitHub: `https://github.com/gnanicloud01/wedding14`.
 2. Clicking **Settings** > **Collaborators**.
 3. Clicking **Add people** and entering their GitHub username or email.

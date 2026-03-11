@@ -15,9 +15,8 @@ A premium streaming and management platform tailored for wedding events. This pr
 - npm or yarn
 
 ### Installation
-1. Clone the repository:
    ```bash
-   git clone https://github.com/gnanicloud01/wedding-ott.git
+   git clone https://github.com/gnanicloud01/wedding14.git
    ```
 2. Install dependencies:
    ```bash
