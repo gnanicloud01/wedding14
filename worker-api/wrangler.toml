@@ -1,0 +1,20 @@
+name = "wedding-ott-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wedding"
+database_id = "23818adc-669f-4c00-ab64-1c6755f0234d"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "wedding"
+
+[vars]
+ADMIN_SECRET = "admin123"
+
+[[routes]]
+pattern = "api.ott.gtsounds.com/*"
+custom_domain = true

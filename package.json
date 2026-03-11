@@ -3,23 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3000",
+    "init-db": "wrangler d1 execute wedding --remote --file=./schema.sql",
+    "init-db:local": "wrangler d1 execute wedding --local --file=./schema.sql",
+    "next-dev": "next dev",
     "build": "next build",
+    "cf-build": "npx @opennextjs/cloudflare build",
+    "deploy": "npm run cf-build && npx wrangler deploy",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "upload-hls": "node scripts/upload-hls-folder.js"
   },
   "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "@aws-sdk/client-s3": "^3.750.0",
+    "@aws-sdk/s3-request-presigner": "^3.750.0",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "@opennextjs/cloudflare": "1.17.1",
+    "clsx": "^2.1.1",
+    "firebase": "^12.10.0",
+    "hls.js": "^1.6.15",
+    "lucide-react": "^0.576.0",
+    "next": "^15.2.9",
+    "razorpay": "^2.9.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-firebase-hooks": "^5.1.1",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260305.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "esbuild": "^0.27.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.71.0"
   }
 }

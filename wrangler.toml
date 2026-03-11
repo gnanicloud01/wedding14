@@ -1,0 +1,25 @@
+name = "wedding-ott"
+main = ".open-next/worker.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wedding"
+database_id = "23818adc-669f-4c00-ab64-1c6755f0234d"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "wedding"
+
+[vars]
+R2_PUBLIC_DOMAIN = "https://pub-d9695ac670454901abd1be0e246024b7.r2.dev"
+ADMIN_SECRET = "admin123"
+
+[[routes]]
+pattern = "ott.gtsounds.com"
+custom_domain = true

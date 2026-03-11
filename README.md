@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wedding OTT
+
+A premium streaming and management platform tailored for wedding events. This project provides a sophisticated "Over-The-Top" (OTT) experience, allowing hosts to manage broadcasts, streaming, and client interactions with a high-end, luxury aesthetic.
+
+## Key Features
+- **Master Admin Dashboard**: Centralized management for system settings and analytics.
+- **Encoding Queue Monitor**: Real-time tracking of video processing.
+- **Broadcast System**: Advanced tools for managing live and on-demand wedding broadcasts.
+- **Premium UI**: Built with Next.js for a fast, glassmorphism-inspired user interface.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (Latest LTS)
+- npm or yarn
 
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gnanicloud01/wedding-ott.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and fill in the required values.
+
+### Development
+Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Team Collaboration
+This project supports a core team of up to 10 members. For guidelines on how to contribute, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
+All rights reserved.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
